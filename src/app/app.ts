@@ -18,8 +18,9 @@ export default class ServerApplication {
     }
 
     private async _initServer() {
-        this.expressApplication.listen(this.config.get('PORT'));
-        console.log('Server lister 3000 port')
+        const port = this.config.get('PORT');
+        this.expressApplication.listen(port);
+        console.log(`Server lister ${port} port`)
     }
 
     public async initApp() {

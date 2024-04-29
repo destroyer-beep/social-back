@@ -12,6 +12,6 @@ export const configRestSchema = convict<RestSchema>({
         doc: 'Port for incoming connections',
         format: 'port',
         env: 'PORT',
-        default: 4000
+        default: 3005
     }
 });
